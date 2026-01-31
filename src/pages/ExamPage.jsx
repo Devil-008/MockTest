@@ -135,7 +135,7 @@ const ExamPage = () => {
     };
 
     if (loading) return <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 p-8 text-white">Loading Exam...</div>;
-    if (!questions.length) return <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 p-8 text-white">No questions in this exam.</div>;
+    if (!questions.length) return <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 flex items-center justify-center text-white text-xl">No questions in this exam.</div>;
 
     const currentQuestion = questions[currentQuestionIndex];
 
