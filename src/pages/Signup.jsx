@@ -38,10 +38,11 @@ const Signup = () => {
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
-                <div className="absolute bottom-0 left-0 p-12">
+                <div className="absolute top-12 left-1/2 -translate-x-1/2 text-center px-8">
                     <h2 className="text-4xl font-bold text-white mb-4">Join MockTest Today</h2>
                     <p className="text-white/70 text-lg max-w-md">Create your account and start your journey towards academic excellence with our comprehensive testing platform.</p>
                 </div>
+                
             </div>
 
             {/* Right Side - Form */}
@@ -111,8 +112,8 @@ const Signup = () => {
                                     type="button"
                                     onClick={() => setFormData({ ...formData, role: 'student' })}
                                     className={`p-4 rounded-xl border-2 flex items-center justify-center gap-2 transition ${formData.role === 'student'
-                                            ? 'border-indigo-500 bg-indigo-500/20 text-white'
-                                            : 'border-white/20 text-white/50 hover:border-white/40'
+                                        ? 'border-indigo-500 bg-indigo-500/20 text-white'
+                                        : 'border-white/20 text-white/50 hover:border-white/40'
                                         }`}
                                 >
                                     <GraduationCap size={20} /> Student
@@ -121,8 +122,8 @@ const Signup = () => {
                                     type="button"
                                     onClick={() => setFormData({ ...formData, role: 'admin' })}
                                     className={`p-4 rounded-xl border-2 flex items-center justify-center gap-2 transition ${formData.role === 'admin'
-                                            ? 'border-purple-500 bg-purple-500/20 text-white'
-                                            : 'border-white/20 text-white/50 hover:border-white/40'
+                                        ? 'border-purple-500 bg-purple-500/20 text-white'
+                                        : 'border-white/20 text-white/50 hover:border-white/40'
                                         }`}
                                 >
                                     <Shield size={20} /> Admin
