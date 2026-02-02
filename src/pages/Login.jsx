@@ -40,9 +40,9 @@ const Login = () => {
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
-                <div className="absolute top-12 left-1/2 -translate-x-1/2 text-center px-8">
+                <div className="absolute top-0 left-0 right-0 flex justify-center text-center px-8 pt-8">
                     <h2 className="text-4xl font-bold text-white mb-4">Welcome to MockTest</h2>
-                    <p className="text-white/70 text-lg max-w-md">Your complete platform for creating and taking mock tests. Perfect preparation leads to perfect performance.</p>
+                    {/* <p className="text-white/70 text-lg max-w-md">Your complete platform for creating and taking mock tests. Perfect preparation leads to perfect performance.</p> */}
                 </div>
             </div>
 
